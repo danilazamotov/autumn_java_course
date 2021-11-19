@@ -23,7 +23,7 @@ class Timer extends Thread {
         if(timer.isInterrupted()){
             timer.run();
         }
-        System.out.println("Start");
+        System.out.println("запуск потока");
     }
 
     public static void restartThread(Thread timer){
@@ -32,12 +32,12 @@ class Timer extends Thread {
         }
         seconds = 0;
         timer.run();
-        System.out.println("Restart");
+        System.out.println("перезагрузка потока");
     }
     public static void stopThread(Thread timer) {
         if (!timer.isInterrupted()){
             timer.interrupt();
-            System.out.println("Stop");
+            System.out.println("поток остановлен");
         }
 
     }

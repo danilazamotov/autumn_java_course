@@ -4,7 +4,7 @@ class Main {
     public static void main(String[] args) {
         Thread timer = new Thread(new Timer());
 
-        while (true) {
+
             try (Scanner sc = new Scanner(System.in)) {
                 System.out.println("Insert an operation: ");
                 String operation = sc.nextLine();
@@ -21,5 +21,4 @@ class Main {
             }
         }
     }
-}
 
