@@ -9,11 +9,11 @@ class Main {
                 System.out.println("Insert an operation: ");
                 String operation = sc.nextLine();
                 switch (operation) {
-                    case "start":
+                    case "S":
                         Timer.startThread(timer);
-                    case "restart":
+                    case "R":
                         Timer.restartThread(timer);
-                    case "stop":
+                    case "P":
                         Timer.stopThread(timer);
                 }
             } catch (Exception e) {
